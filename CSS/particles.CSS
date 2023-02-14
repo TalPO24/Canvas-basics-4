@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Griffy", cursive;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, purple, black);
+}
+
+#title1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+    font-size: 120px;
+    border-top: 5px solid white;
+    text-shadow: 0 -5px 2px rgba(0, 0, 0, 0.5);
+}
+
+#title1::before {
+    content: "HALLOWEEN";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
